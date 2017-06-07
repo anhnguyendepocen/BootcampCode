@@ -8,12 +8,6 @@ Created Nov 11, 2014 by Tom Loredo
 from numpy import ones_like
 from matplotlib.pyplot import *
 
-import myplot
-from myplot import close_all, csavefig
-
-ion()
-#myplot.tex_on()
-csavefig.save = False
 
 dkred = '#882222'
 
@@ -55,7 +49,7 @@ def shrinkage_plot(x_vals, pdf_vals, x_true, x_ml, x_post, xlabel,
     ax_pts.axhline(y_true, color='k')
     ax_pts.axhline(y_ml, color='k')
     ax_pts.axhline(y_post, color='k')
-    # Don't plot ticks (marjor or minor)
+    # Don't plot ticks (major or minor)
     ax_pts.tick_params(bottom=False, top=False, left=False, right=False,
                        which='both')
 
