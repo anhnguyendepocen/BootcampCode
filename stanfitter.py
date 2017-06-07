@@ -286,7 +286,7 @@ class StanFitResults:
             The StanFitter instance that implemented the fit; model properties
             describing the fit are accessed from `fitter`
 
-        fit : PyStan fit instance
+        stan_fit : PyStan fit instance
             PyStan fit object with results of a posterior sampling run
         """
         self.fitter = fitter
